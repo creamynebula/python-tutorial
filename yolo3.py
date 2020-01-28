@@ -28,3 +28,4 @@ teste = f2(m,n) #f(x) = 2x + 9
 print ('teste(2) tal que teste(x) = ',m,'*','x','+',n,':', teste(2))
 print ('teste(3) tal que teste(x) = ',m,'*','x','+',n,':', teste(3))
 print ('teste(4) tal que teste(x) = ',m,'*','x','+',n,':', teste(4))
+#esse comment eh soh pra testar o git push
