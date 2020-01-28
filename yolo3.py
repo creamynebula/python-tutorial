@@ -15,7 +15,7 @@ def f2(m, n):
     """
     return lambda x: m*x + n
 
-print(f2.__doc__)
+print(f2.__doc__) #isso vai imprimir a documentation string de f2
 m,n=3,1
 teste = f2(m,n) #f(x) = 3x + 1
 print ('teste(2) tal que teste(x) = ',m,'*','x','+',n,':', teste(2))
