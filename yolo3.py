@@ -41,6 +41,7 @@ print('f2(4) tal que f2(x) = ', m, '*', 'x', ' + ', n, ': ', f2(4), sep='')
 impares = [1, 3, 5, 7]
 uns = [1, 1, 1, 1]
 maisUns = [1, 1, 1, 1, 1]
+# [(1, 1, 1), (3, 1, 1), (5, 1, 1), (7, 1, 1)]
 zipped = list(zip(impares, uns, maisUns))
 print('\nzipped:', zipped)
 print('\n')
