@@ -1,5 +1,5 @@
-# python-tutorial (mostly from https://docs.python.org)
+# python-tutorial (mostly from https://docs.python.org and https://www.kaggle.com/learn/python)
 
-Playing a bit with Python because I want to get into Data Science and Machine Learning.
+Playing a bit with Python because I'm considering getting into Data Science and Machine Learning.
 
-Aprendendo Python porque preciso para mexer com Data Science e Machine Learning.
+Aprendendo Python porque estou considerando ir pra área de Data Science.
