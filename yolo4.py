@@ -57,3 +57,17 @@ print('Index do elemento 6, se houver:', lista1.index(6))
 
 lista1.sort()
 print('Sorted:', lista1)
+
+lista3 = []
+# 1,4,9...
+for x in range(19):
+    lista3.append(x**2)
+print('\nLista3:', lista3)
+
+# ou
+lista3 = list(map(lambda x: x**2, range(19)))
+print('\nLista3 sem side effects:', lista3)
+
+# ou, super fácil de ler e escrever
+lista3 = [x**2 for x in range(19)]
+print('\nLista3 sem side effects usando uma notacao r0x:', lista3)
