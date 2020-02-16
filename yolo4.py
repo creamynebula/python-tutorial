@@ -58,8 +58,9 @@ print('Index do elemento 6, se houver:', lista1.index(6))
 lista1.sort()
 print('Sorted:', lista1)
 
+# primeiro a lista vazia
 lista3 = []
-# 1,4,9...
+# agora 1,4,9,16...
 for x in range(19):
     lista3.append(x**2)
 print('\nLista3:', lista3)
@@ -71,3 +72,19 @@ print('\nLista3 sem side effects:', lista3)
 # ou, super fácil de ler e escrever
 lista3 = [x**2 for x in range(19)]
 print('\nLista3 sem side effects usando uma notacao r0x:', lista3)
+print('Último elemento de lista3:', lista3[-1])
+print('Últimos 3 elementos de lista3:', lista3[-3:])
+
+
+def funcx(x):
+    if x % 2 == 0:
+        return x
+    else:
+        return x**3
+
+
+lista4 = list(map(lambda x: funcx(x), range(19)))
+
+print('\nLista4 sem side effects usando uma notacao r0x:', lista4)
+print('Elementos da lista ordenados(com side effect, a lisat muda quando faz sorted(lista)):', sorted(lista4))
+print('Lista 4:', lista4)
