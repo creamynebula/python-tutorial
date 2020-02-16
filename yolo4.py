@@ -28,7 +28,7 @@ def quiz_message(grade):
 quiz_message(59)
 quiz_message(61)
 
-lista1, lista2 = [1, 2, 4, 9, 6, 10, 11, 12], [1, 1, 1, 1]
+lista1, lista2 = [1, 2, 4, 9, 6, 10, 11, 12], [1, 1, 2, 1]
 print('lista 1 no começo:', lista1)
 print('lista 2 no começo:', lista2)
 lista1.append(13)
@@ -39,14 +39,21 @@ print('lista 1 dps de add "13" e os elementos de lista 2:', lista1)
 lista1.insert(len(lista1)-1, 'penultimo')
 print(lista1)
 
-# remove o 1o elemento que tem esse valor, se nao tiver nenhum retorna ValueError
+# remove o 1o elemento que tem esse valor, se nao tiver nenhum raises a ValueError
 lista1.remove('penultimo')
+print(lista1)
 
-# lista1.pop(i) remove o elemento em i, ou remove o último se nao especificar índice
-lista1.pop(len(lista1)-1)
+# lista1.pop(i) remove o elemento em i, ou remove o último se nao especificar índice, e retorna o elemento entao da pra assign to variable ou func
+# len(lista1)-2 é o último elemento, porque se a lista tiver por ex. 10 elementos, len(lista1)-2 = índice 8, o penúltimo.
+lista1.pop(len(lista1)-2)
 print(lista1)
 
 # lista1.clear() removeria todos os elementos da lista
+# lista1.count(elemento) retorna o numero de vezes que elemento aparece
+# lista.index(elemento) retorna o menor índice aonde elemento aparece
 
 print('Quantidade de 1\'s:', lista1.count(1))
 print('Index do elemento 6, se houver:', lista1.index(6))
+
+lista1.sort()
+print('Sorted:', lista1)
