@@ -66,11 +66,11 @@ for x in range(19):
 print('\nLista3:', lista3)
 
 # ou
-lista3 = list(map(lambda x: x**2, range(19)))
+lista3 = list(map(lambda x: x**2, range(17)))
 print('\nLista3 sem side effects:', lista3)
 
 # ou, super fácil de ler e escrever
-lista3 = [x**2 for x in range(19)]
+lista3 = [x**2 for x in range(17)]
 print('\nLista3 sem side effects usando uma notacao r0x:', lista3)
 print('Último elemento de lista3:', lista3[-1])
 print('Últimos 3 elementos de lista3:', lista3[-3:])
@@ -83,8 +83,13 @@ def funcx(x):
         return x**3
 
 
-lista4 = list(map(lambda x: funcx(x), range(19)))
+lista4 = list(map(funcx, range(17)))
 
 print('\nLista4 sem side effects usando uma notacao r0x:', lista4)
-print('Elementos da lista ordenados(com side effect, a lisat muda quando faz sorted(lista)):', sorted(lista4))
+print('Elementos da lista ordenados(sem side effects via sorted(lista)):', sorted(lista4))
 print('Lista 4:', lista4)
+
+lista5 = [x if x % 2 == 0 else x**3 for x in range(17)]
+print('\nLista 5:', lista5)
+
+lista6 = []
