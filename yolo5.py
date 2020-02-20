@@ -20,3 +20,11 @@ def skip_elements(elements):
 print(skip_elements(["a", "b", "c", "d", "e", "f", "g"]))
 # Should be ['Orange', 'Strawberry', 'Peach']
 print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach']))
+
+lista1 = [('mateus', 'mateus.souzaaa@gmail.com'), ('fulano', 'fulano@sharklasers.com'),
+          ('chihaya', 'karutafuru@karuta.net'), ('chitanda', 'chitandaeru@hyouka.jp')]
+
+pessoas = []
+for pessoa in lista1:
+    pessoas.append('{} - {}'.format(pessoa[0], pessoa[1]))
+print(pessoas)
