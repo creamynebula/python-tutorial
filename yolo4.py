@@ -89,7 +89,27 @@ print('\nLista4 sem side effects usando uma notacao r0x:', lista4)
 print('Elementos da lista ordenados(sem side effects via sorted(lista)):', sorted(lista4))
 print('Lista 4:', lista4)
 
+# igual lista 4 mas usando list-comprehension ao invés de map+lambda
 lista5 = [x if x % 2 == 0 else x**3 for x in range(17)]
 print('\nLista 5:', lista5)
 
-lista6 = []
+# nem precisa dos parenteses, mas fica mais fácil de ler
+lista6 = [x if (x % 2 == 1) else (x**3) for x in range(17)]
+print('\nLista 6:', lista6)
+
+lista7 = [2*x if x % 2 == 0 else 3*x for x in range(17)]
+print('\nLista 7:', lista7)
+
+lista8 = ['Tokyo', 'Osaka', 'Kyoto']
+print('\nLista 8:', lista8)
+if 'Kobe' in lista8:  # retorna true ou false
+    print('Posição de Kobe:', lista8.index('Kobe'))
+else:
+    print('Não tem Kobe ainda.')
+lista8.append('Kobe')
+print('Lista 8:', lista8)
+if 'Kobe' in lista8:
+    print('Posição de Kobe:', lista8.index('Kobe'))
+
+lista9 = [(x, y) for x in [1, 2, 3] for y in [1, 2, 3, 4] if x != y]
+print('\nLista9:', lista9)
