@@ -72,3 +72,9 @@ def fashionably_late(arrivals, name):
     if when >= fashionable and when < last:
         return True
     return False
+
+
+planets = ['Mercury', 'Venus', 'Earth', 'Mars',
+           'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+lista1 = [planet for planet in planets if len(planet) < 7]
+print(lista1)
