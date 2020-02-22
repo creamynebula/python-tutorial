@@ -28,3 +28,14 @@ pessoas = []
 for pessoa in lista1:
     pessoas.append('{} - {}'.format(pessoa[0], pessoa[1]))
 print(pessoas)
+
+x = 0.125
+# retorna uma tuple (a,b) aonde a/b = x
+numerator, denominator = x.as_integer_ratio()
+print(numerator / denominator)
+
+a = 1
+b = 0
+# em python podemos a,b = b,a pra inverter os valores, porque ele trata isso como (a,b) = (b,a)
+a, b = b, a
+print(a, b)
