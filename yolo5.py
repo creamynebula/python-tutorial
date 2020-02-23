@@ -109,3 +109,27 @@ def elementwise_greater_than(L, thresh):
         else:
             result.append(False)
     return result
+
+
+# mesma coisa, mto mais inteligente...
+def elementwise_greater_than2(L, thresh):
+    res = []
+    for ele in L:
+        res.append(ele > thresh)
+    return res
+
+
+# mesma coisa, ainda mais inteligente...
+def elementwise_greater_than3(L, thresh):
+    return [ele > thresh for ele in L]
+
+
+def menu_is_boring(meals):
+    """Given a list of meals served over some period of time, return True if the
+    same meal has ever been served two days in a row, and False otherwise.
+    """
+    length = len(meals)
+    for i in range(length-1):
+        if meals[i] == meals[i+1]:
+            return True
+    return False
